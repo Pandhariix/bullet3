@@ -10136,7 +10136,7 @@ static PyObject* pybullet_renderImageObsolete(PyObject* self, PyObject* args)
 static PyObject* pybullet_applyExternalForce(PyObject* self, PyObject* args, PyObject* keywds)
 {
 	{
-		int objectUniqueId = -1, linkIndex = -1, flags;
+		int objectUniqueId = -1, linkIndex = -1, flags; //TODO: test with =-1 for the flags ?
 		double force[3];
 		double position[3] = {0.0, 0.0, 0.0};
 		PyObject *forceObj = 0, *posObj = 0;
